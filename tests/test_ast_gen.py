@@ -13,6 +13,6 @@ def test_ast_gen_placeholder():
 }"""
     # TODO: Add actual test assertions
     # Example:
-    # expected = "Program([FuncDecl(VoidType(), main, [], BlockStmt([]))])"
-    # assert str(ASTGenerator(source).generate()) == expected
+    expected = "program([func_decl(KEYWORD_TYPE_VOID(), MAIN, [], block_statement([]))])"
+    assert str(ASTGenerator(source).generate()) == expected
     assert True

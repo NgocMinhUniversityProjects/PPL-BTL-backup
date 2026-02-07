@@ -1,3 +1,17 @@
+# Note to self:
+run the thing by doing
+```bash
+py -3.12 ...
+```
+
+instead of 
+```bash
+python ...
+```
+
+this wants speciccally 3.12 to work
+
+
 # TyC Compiler Project
 
 A comprehensive compiler implementation for **TyC**, a simple C-like programming language with complete type inference, using the ANTLR4 parser generator.

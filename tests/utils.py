@@ -96,8 +96,10 @@ class Parser:
         parser.removeErrorListeners()
         parser.addErrorListener(NewErrorListener.INSTANCE)
 
+
         try:
             tree = parser.program()
             return "success"
         except Exception as e:
-            return str(e)
+            ERRSTR = ",".join( [str(t.type or "None") for t in token_stream.getTokens(0, float("inf")) ])
+            return str(e) + f" Tokenstream: {ERRSTR}" 
